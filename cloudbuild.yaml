@@ -16,7 +16,7 @@ steps:
     apt-get install -y git
     mv firebase /tmp
 
-    git clone git@github.com:cballenar/animated-illustrations.git ./public/animated-illustrations
+    git clone https://github.com/cballenar/animated-illustrations.git ./public/animated-illustrations
 
     chmod 755 /tmp/firebase
     /tmp/firebase deploy --project ${PROJECT_ID} --non-interactive --only hosting -m "Build ${BUILD_ID}"
