@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "pets-cballenar",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
