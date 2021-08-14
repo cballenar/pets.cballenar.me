@@ -79,6 +79,10 @@ body.breadcrumb-fixed {
 .file-info-button i {
     color: #999;
 }
+#page-content .nav>li>a {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 /* ---------------------------------------------------------------------------------------------- */
