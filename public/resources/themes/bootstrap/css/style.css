@@ -1,33 +1,22 @@
-/* ---------------------------------------------------------------------------------------------- */
-/* -----| GENERAL |------------------------------------------------------------------------------ */
-/* ---------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     padding: 100px 0 0;
     font-size: 16px;
-}
-
-body.breadcrumb-fixed {
-    padding-top: 56px;
+    font-family: 'Courier Prime', monospace;
 }
 
 .container {
     max-width: 960px;
 }
-
-
-/* -------------------------------------------------------------------------- */
-/* -----| HEADER |----------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
 #page-navbar h1.navbar-text {
-    font-weight: 600;
+    color: #222;
+    font-weight: 700;
     font-size: 21px;
 }
 #page-navbar .navbar-text {
     display: block;
     float: none;
-    font-family: 'Cutive Mono', monospace, serif;
     max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -35,24 +24,18 @@ body.breadcrumb-fixed {
     font-size: 18px;
 }
 
-
-/* ---------------------------------------------------------------------------------------------- */
-/* -----| DIRECTORY LISTER |--------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------- */
-
 #directory-list-header {
-    font-family: 'Cutive Mono', monospace, serif;
     font-weight: bold;
-    padding: 10px 15px;
-}
-
-#directory-listing {
-    font-family: 'Cutive Mono', monospace, serif;
-    font-weight: 600;
+    padding: 10px 0;
 }
 
 #directory-listing li {
     position: relative;
+}
+
+#directory-listing a {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .file-name {
@@ -65,90 +48,13 @@ body.breadcrumb-fixed {
     color: #555;
 }
 
-.file-info-button,
-.web-link-button {
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 100%;
-    padding: 6px 10px !important;
-    position: absolute !important;
-    top: 4px;
-}
-
-.web-link-button i,
-.file-info-button i {
-    color: #999;
-}
 #page-content .nav>li>a {
     padding-left: 0;
     padding-right: 0;
 }
-
-
-/* ---------------------------------------------------------------------------------------------- */
-/* -----| FOOTER |------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------- */
 
 .footer {
     margin: 20px;
     text-align: center;
     font-size: 12px;
 }
-
-
-/* ---------------------------------------------------------------------------------------------- */
-/* -----| CHECKSUM MODAL |----------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------- */
-
-#file-info {
-    margin: 0;
-}
-
-#file-info .table-title {
-    font-weight: bold;
-    text-align: right;
-}
-
-#file-info .md5-hash,
-#file-info .sha1-hash {
-    font-family: 'Cutive Mono', monospace, serif;
-}
-
-
-/* -------------------------------------------------------------------------- */
-/* -----| RESPONSIVE |------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
-@media (max-width: 767px) {
-
-    .navbar-nav {
-        margin: 0;
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-
-    .navbar-nav > li {
-        float: left;
-    }
-
-    .navbar-nav > li > a {
-        padding-bottom: 15px;
-        padding-top: 15px;
-    }
-
-    .navbar-right {
-        float: right !important;
-    }
-
-    #page-navbar .navbar-text {
-        margin-left: 15px;
-        margin-right: 15px;
-        max-width: 75%;
-    }
-
-    .file-info-button {
-        display: none !important;
-    }
-
-}
-
